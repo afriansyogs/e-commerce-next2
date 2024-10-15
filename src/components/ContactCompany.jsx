@@ -1,7 +1,18 @@
-import React from 'react';
+'use client';
+
+import React, { useEffect } from 'react';
 import { contactData } from '@/lib/data';
 
 const ContactCompany = () => {
+    useEffect(() => {
+        if (typeof window !== 'undefined' && window.AOS) {
+            window.AOS.init({
+                duration: 1000,
+                once: true,
+            });
+        }
+    }, []);
+
     return (
         <div className="h-auto my-5">
             <h1 className='mt-3 text-center text-4xl font-bold'>Contact</h1>
