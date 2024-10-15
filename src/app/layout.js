@@ -20,10 +20,21 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body
-        className={`${geistSans.variable} ${geistMono.variable} antialiased`}
-      >
+      <head>
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+        <script src="https://kit.fontawesome.com/f9189b0d8d.js" crossOrigin="anonymous"></script>
+      </head>
+      <body className={`${geistSans.variable} ${geistMono.variable} antialiased`}>
         {children}
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+          {`if (window.AOS) {
+              window.AOS.init({
+                duration: 1000,
+                once: true,
+              });
+            }`}
+        </script>
       </body>
     </html>
   );
