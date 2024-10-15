@@ -1,9 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image'; 
-import Qrcode1 from '../assets/img/Qrcode1.png';
-import GooglePlay from '../assets/img/GooglePlay.png';
-import AppStore from '../assets/img/AppStore.png';
 
 const Footer = () => {
     return (
@@ -67,11 +64,11 @@ const Footer = () => {
                         </li>
                         <div className="flex flex-row mt-2">
                             <div className="w-[40%]">
-                                <Image src={Qrcode1} className="w-20 h-20" alt="QR Code" />
+                                <Image src="/assets/img/Qrcode1.png" width={80} height={80} alt="QR Code" />
                             </div>
                             <div className="w-1/2">
-                                <Image src={GooglePlay} className="w-[104px] h-[30px]" alt="Google Play Store" />
-                                <Image src={AppStore} className="w-[104px] h-[30px] mt-4" alt="Apple App Store" />
+                                <Image src="/assets/img/GooglePlay.png" width={104} height={30} alt="Google Play Store" />
+                                <Image src="/assets/img/AppStore.png" width={104} height={30} className=" mt-4" alt="Apple App Store" />
                             </div>
                         </div>
                         <div className="flex flex-row gap-4 mt-7 ms-8">

@@ -2,17 +2,13 @@
 
 import { useEffect } from 'react';
 import Image from 'next/image';
-import PsProduct from '../assets/img/PsProduct.png';
-import Women from '../assets/img/Women.png';
-import Parfume from '../assets/img/Parfume.png';
-import Speaker from '../assets/img/Speaker.png';
 
 const Featured = () => {
     useEffect(() => {
         if (window.AOS) {
             window.AOS.init({
-                duration: 1000, // Durasi animasi dalam milidetik
-                once: true,     // Animasi hanya terjadi sekali
+                duration: 1000,
+                once: true,    
             });
         }
     }, []);
@@ -31,7 +27,7 @@ const Featured = () => {
             <div className="mt-12 flex flex-row gap-x-8">
                 <div className="relative w-1/2 h-[600px] bg-black flex items-end justify-center" data-aos="fade-right">
                     <Image 
-                        src={PsProduct} 
+                        src="/assets/img/PsProduct.png" 
                         width={500} 
                         height={500} 
                         alt="PlayStation 5" 
@@ -48,7 +44,7 @@ const Featured = () => {
                 <div className="w-1/2 bg-transparent">
                     <div className="relative w-full h-[284px] bg-black flex items-end justify-end" data-aos="fade-down">
                         <Image 
-                            src={Women}
+                            src="/assets/img/Women.png"
                             width={280} 
                             height={280} 
                             alt="Women’s Collections" 
@@ -65,7 +61,7 @@ const Featured = () => {
                     <div className="flex flex-row gap-x-8 mt-8">
                         <div className="relative w-full h-[284px] bg-black flex items-center justify-center" data-aos="fade-up">
                             <Image 
-                                src={Speaker}
+                                src="/assets/img/Speaker.png"
                                 width={220} 
                                 height={220} 
                                 alt="Speakers" 
@@ -79,7 +75,7 @@ const Featured = () => {
                         </div>
                         <div className="relative w-full h-[284px] bg-black flex items-center justify-center" data-aos="fade-up">
                             <Image 
-                                src={Parfume}
+                                src="/assets/img/Parfume.png"
                                 width={220} 
                                 height={220} 
                                 alt="Perfume" 

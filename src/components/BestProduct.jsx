@@ -4,7 +4,7 @@
 import React, { useState, useEffect } from 'react';
 import { productData } from '@/lib/data';
 import Image from 'next/image';
-import ProductGambar from '../assets/img/Frame694.png';
+// import ProductGambar from '/assets/img/bestSpeker.png';
 
 const BestProduct = () => {
     const [counter, setCounter] = useState(60);
@@ -108,12 +108,8 @@ const BestProduct = () => {
                     </button>
                 </div>
                 <div className="w-1/2 flex items-center justify-center">
-                    <Image
-                        src={ProductGambar}
-                        alt="Banner Image"
-                        width={560}
-                        height={410}
-                        className="filter drop-shadow-white"
+                    <Image src='/assets/img/bestSpeker.png' alt="Banner Image"
+                        width={560} height={410} className="filter drop-shadow-white"
                     />
                 </div>
             </div>

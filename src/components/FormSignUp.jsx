@@ -1,15 +1,15 @@
 import React from 'react';
-import Link from 'next/link'; // Import NextLink
-import Image from 'next/image'; // Import next/image
-import IconGoogle from '../assets/img/IconGoogle.png';
-import Sunday from '../assets/img/Sunday.png';
+import Link from 'next/link'; 
+import Image from 'next/image';
 
 const FormSignUp = () => {
     return (
         <div className="flex flex-wrap w-full bg-white shadow-lg rounded-lg overflow-hidden">
             <div className="w-full md:w-1/2 flex items-end justify-end">
-                {/* Using next/image for the image */}
-                <Image src={Sunday} className="w-[97%]" alt="Sunday" layout="responsive" />
+                {/* <Image src={Sunday} className="w-[97%]" alt="Sunday" layout="responsive" /> */}
+                <Image src="/assets/img/Sunday.png" alt="Sunday" width={2907} height={2420} layout="responsive" 
+                />
+
             </div>
             <div className="w-full md:w-1/2 p-4">
                 <div className="w-[380px] mx-auto">
@@ -57,8 +57,7 @@ const FormSignUp = () => {
                         <div className="flex items-center justify-between">
                             <button type="submit" className="w-full h-14 rounded-md border-2 border-black hover:bg-black hover:text-white active:scale-105 transform duration-200 text-black font-semibold">
                                 <div className="flex justify-center items-center space-x-3">
-                                    {/* Using next/image for the Google icon */}
-                                    <Image src={IconGoogle} className="w-6 h-6" alt="Google Icon" layout="intrinsic" />
+                                    <Image src="/assets/img/IconGoogle.png" width={24} height={24} alt="Google Icon" layout="intrinsic" />
                                     <div className='text-base'>Sign Up with Google</div>
                                 </div>
                             </button>

@@ -8,10 +8,12 @@ const Founder = () => {
             {founderData.map((item, index) => (
                 <div key={index} className="flex flex-col items-center" data-aos="fade-up" data-aos-duration="600">
                     <div className="relative w-72 h-56 rounded-t-full bg-red-500">
-                        <img 
+                        <Image 
                             src={item.founderImg} 
                             alt={item.founderName} 
-                            className="absolute bottom-0 left-0 w-full h-[385px] object-cover rounded-t-full transition-transform duration-300 ease-in-out transform hover:scale-110 hover:-translate-y-5" 
+                            className="absolute bottom-0 left-0 w-full h-[385px] object-cover rounded-t-full transition-transform duration-300 ease-in-out transform hover:scale-110 hover:-translate-y-5"
+                            width={288}
+                            height={385} 
                         />
                     </div>
                     <div className="text-center mt-2">

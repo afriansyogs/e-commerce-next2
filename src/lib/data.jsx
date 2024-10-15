@@ -36,9 +36,9 @@ export const fieldStatistic = [
 ];
 
 export const founderData = [
-    { founderName: 'James Cruise', position: 'Chief Technology Officer', founderImg: '../assets/img/founder111.png' },
-    { founderName: 'Emma Watson', position: 'Chief Executive Officer', founderImg: '../assets/img/founder222.png' },
-    { founderName: 'Will Smith', position: 'Chief Financial Officer', founderImg: '../assets/img/founder333.png' }
+    { founderName: 'James Cruise', position: 'Chief Technology Officer', founderImg: '/assets/img/founder111.png' },
+    { founderName: 'Emma Watson', position: 'Chief Executive Officer', founderImg: '/assets/img/founder222.png' },
+    { founderName: 'Will Smith', position: 'Chief Financial Officer', founderImg: '/assets/img/founder333.png' }
 ];
 
 export const contactData = [
