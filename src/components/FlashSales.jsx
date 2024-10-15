@@ -21,7 +21,7 @@ const FlashSales = () => {
         <div className="mt-14 ms-[70px] w-[90%] border-b-2 border-base-300 pb-20">
             <div className="flex items-center">
                 <div className="w-5 h-10 bg-red-600 rounded-md"></div>
-                <div className="ms-4 text-md text-red-600 font-semibold">Today's</div>
+                <div className="ms-4 text-md text-red-600 font-semibold">Today&apos;s</div>
             </div>
             <div className="mt-2 flex items-end">
                 <div className="text-[36px] font-bold">
