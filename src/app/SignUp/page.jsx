@@ -5,11 +5,11 @@ import FormSignUp from "@/components/FormSignUp";
 
 export default function SignUp() {
   return (
-    <>
+    <div className="overflow-x-hidden">
       <Header />
       <Navbar />
       <FormSignUp />
       <Footer />
-    </>
+    </div>
   );
 }

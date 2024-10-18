@@ -18,12 +18,8 @@ const AboutStory = () => {
             </div>
             <div className="w-1/2 flex items-center justify-center">
                 <div className="relative w-full h-full"> 
-                    <Image 
-                        src="/assets/img/aboutImg.png"
-                        alt="About Us" 
+                    <Image src="/assets/img/aboutImg.png" alt="About Us" 
                         width={852} height={392}
-                        layout="" 
-                        objectFit=""
                     />
                 </div>
             </div>

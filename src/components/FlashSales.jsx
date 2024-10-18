@@ -74,8 +74,7 @@ const FlashSales = () => {
                                 </div>
                                 <Image 
                                     src={item.images}
-                                    alt={item.productName} 
-                                    layout="fill" 
+                                    alt={item.productName} fill 
                                     objectFit="contain" 
                                     className="max-w-full max-h-full object-contain"
                                 />
