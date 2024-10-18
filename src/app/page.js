@@ -13,7 +13,7 @@ import Footer from "@/components/Footer";
 
 export default function Home() {
   return (
-    <>
+    <div className=" overflow-x-hidden">
       <Header />
       <Navbar />
       <div className="flex">
@@ -27,6 +27,6 @@ export default function Home() {
       <Featured />
       <Service />
       <Footer />
-    </>
+    </div>
   );
 }

@@ -1,6 +1,5 @@
 import React from 'react';
 import Image from 'next/image';
-import aboutImg from '@/assets/img/aboutImg.png';
 
 const AboutStory = () => {
     return (
@@ -20,8 +19,9 @@ const AboutStory = () => {
             <div className="w-1/2 flex items-center justify-center">
                 <div className="relative w-full h-full"> 
                     <Image 
-                        src={aboutImg} 
+                        src="/assets/img/aboutImg.png"
                         alt="About Us" 
+                        width={852} height={392}
                         layout="" 
                         objectFit=""
                     />

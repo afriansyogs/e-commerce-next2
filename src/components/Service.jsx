@@ -14,7 +14,7 @@ const Service = () => {
 
     return (
         <div className="w-[90%] ms-[70px] mb-36 mt-24">
-            <div className="flex flex-row gap-x-36 justify-center">
+            <div className="flex flex-row md:gap-24 lg:gap-x-36 justify-center">
                 {/* Layanan Pengiriman */}
                 <div className="flex flex-col items-center" data-aos="zoom-out">
                     <div className="w-20 h-20 rounded-full bg-black border-8 border-gray-300 text-xl text-white flex items-center justify-center mb-2">

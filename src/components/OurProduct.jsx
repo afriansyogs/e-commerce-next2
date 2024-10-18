@@ -17,7 +17,7 @@ const OurProduct = () => {
                     Explore Our Products
                 </div>
             </div>
-            <div className="grid grid-cols-4 gap-x-4 gap-y-10 mt-11 ">
+            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10 mt-11">
                 {productData.slice(0, 8).map((item, index) => (
                     <div key={index} className="group relative card bg-base-100 w-72 shadow-xl overflow-hidden" data-aos="fade-up">
                         <figure className="w-full h-48 flex justify-center items-center bg-gray-200 relative">
