@@ -4,6 +4,7 @@
 import React, { useEffect } from 'react';
 import { productData } from '@/lib/data';
 import Image from 'next/image';
+import  ButtonAllProduct  from "@/components/ButtonAllProduct";
 
 const OurProduct = () => {
     return (
@@ -49,7 +50,7 @@ const OurProduct = () => {
                 ))}
             </div>
             <div className="flex justify-center mt-24 bg-transparent">
-                <button className='w-72 h-14 rounded-md bg-red-500 text-white border-2 hover:bg-white hover:text-red-500 hover:border-red-500 active:scale-110 transition duration-200'>View All Products</button>
+                <ButtonAllProduct text="View All Products" />
             </div>
         </div>
     );

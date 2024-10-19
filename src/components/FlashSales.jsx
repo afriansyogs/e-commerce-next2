@@ -3,6 +3,7 @@
 import React, { useState, useEffect } from 'react';
 import Image from 'next/image';
 import { productData } from '@/lib/data';
+import  ButtonAllProduct  from "@/components/ButtonAllProduct";
 
 const FlashSales = () => {
     const [counter, setCounter] = useState(60);
@@ -101,9 +102,7 @@ const FlashSales = () => {
                 </div>
             </div>
             <div className="flex justify-center mt-16 bg-transparent">
-                <button className='w-72 h-14 rounded-md bg-red-500 text-white border-2 hover:bg-white hover:text-red-500 hover:border-red-500 active:scale-110 transition duration-200'>
-                    View All Products
-                </button>
+                <ButtonAllProduct text="View All Products"/>
             </div>
         </div>
     );
