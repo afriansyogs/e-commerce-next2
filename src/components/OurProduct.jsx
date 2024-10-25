@@ -30,7 +30,7 @@ const OurProduct = () => {
                                     <i className="fa-regular fa-eye"></i>
                                 </button>
                             </div>
-                            <Image src={item.images} alt={item.productName}width={288} height={192} className="max-w-full max-h-full object-contain" responsive/>
+                            <Image src={item.images} alt={item.productName}width={288} height={192} className="max-w-full max-h-full object-contain" responsive="true"/>
                             <div className="absolute inset-x-0 bottom-0 transition-transform transform translate-y-full group-hover:translate-y-0 duration-300 flex justify-center bg-black py-2 hover:bg-gray-300 text-white hover:text-black cursor-pointer">
                                 <div className="font-bold">
                                     Buy Now

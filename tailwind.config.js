@@ -17,6 +17,6 @@ module.exports = {
     require('daisyui'),
   ],
   daisyui: {
-    themes: ["light"], // Mengatur tema default menjadi 'light'
+    themes: ["light"], 
   },
 };

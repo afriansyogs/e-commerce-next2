@@ -32,8 +32,8 @@ const BestProduct = () => {
             </div>
             <div className="overflow-x-auto scrollbar-hide">
                 <div className="flex gap-8 mt-12 w-max pb-8">
-                    {bestProducts.slice(0, 8).map((product) => (
-                        <div key={product.id} className="group relative card bg-base-100 w-72 shadow-xl overflow-hidden" data-aos="fade-up">
+                    {bestProducts.slice(0, 8).map((product, index) => (
+                        <div key={index} className="group relative card bg-base-100 w-72 shadow-xl overflow-hidden" data-aos="fade-up">
                             <figure className="w-full h-48 flex justify-center items-center bg-gray-200 relative">
                                 <div className="absolute top-3 right-3">
                                     <button className="w-8 h-8 bg-white flex items-center justify-center rounded-full active:scale-110 hover:bg-red-500 hover:text-white transition duration-200">

@@ -65,7 +65,7 @@ const FlashSales = () => {
                                         -{item.discount}%
                                     </h1>
                                 </div>
-                                <div className="absolute top-3 right-3">
+                                <div className="absolute top-3 right-3 z-10">
                                     <button className="w-8 h-8 bg-white flex items-center justify-center rounded-full active:scale-110 hover:bg-red-500 hover:text-white transition duration-200">
                                         <i className="fa-regular fa-heart"></i>
                                     </button>
@@ -76,10 +76,10 @@ const FlashSales = () => {
                                 <Image 
                                     src={item.images}
                                     alt={item.productName} fill 
-                                    objectFit="contain" 
-                                    className="max-w-full max-h-full object-contain"
+                                    style={{ objectFit: "contain" }}
+                                    className="max-w-full max-h-full object-contain z-0"
                                 />
-                                <div className="absolute inset-x-0 bottom-0 transition-transform transform translate-y-full group-hover:translate-y-0 duration-300 flex justify-center bg-black py-2 hover:bg-gray-300 text-white hover:text-black cursor-pointer">
+                                <div className="absolute inset-x-0 bottom-0 transition-transform transform translate-y-full group-hover:translate-y-0 duration-300 flex justify-center bg-black py-2 hover:bg-gray-300 text-white hover:text-black cursor-pointer z-10">
                                     <div className="font-bold">Buy Now</div>
                                 </div>
                             </figure>
