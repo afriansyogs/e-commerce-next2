@@ -5,20 +5,18 @@ import React, { useEffect } from 'react';
 import { productData } from '@/lib/data';
 import Image from 'next/image';
 import  ButtonAllProduct  from "@/components/ButtonAllProduct";
+import  Point  from "@/components/Point";
 
 const OurProduct = () => {
     return (
-        <div className="mt-16 ms-[70px] w-[90%]">
-            <div className="flex items-center">
-                <div className="w-5 h-10 bg-red-600 rounded-md"></div>
-                <div className="ms-4 text-md text-red-600 font-semibold">Our Product</div>
-            </div>
+        <div className="mt-16 ms-[10px] md:ms-[70px] w-[95%] md:w-[90%]">
+            <Point text="Our Product" />
             <div className="mt-2 flex items-end">
-                <div className="text-[36px] font-bold">
+                <div className="text-2xl md:text-4xl lg:text-[36px] font-bold">
                     Explore Our Products
                 </div>
             </div>
-            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10 mt-11">
+            <div className="grid md:grid-cols-3 lg:grid-cols-4 gap-x-4 gap-y-10 mt-11 justify-center">
                 {productData.slice(0, 8).map((item, index) => (
                     <div key={index} className="group relative card bg-base-100 w-72 shadow-xl overflow-hidden" data-aos="fade-up">
                         <figure className="w-full h-48 flex justify-center items-center bg-gray-200 relative">

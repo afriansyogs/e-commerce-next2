@@ -13,7 +13,7 @@ const Service = () => {
     }, []);
 
     return (
-        <div className="w-[90%] ms-[70px] mb-36 mt-24">
+        <div className="mb-36 mt-24 ms-[10px] md:ms-[70px] w-[95%] md:w-[90%]">
             <div className="flex flex-row md:gap-24 lg:gap-x-36 justify-center">
                 {/* Layanan Pengiriman */}
                 <div className="flex flex-col items-center" data-aos="zoom-out">
@@ -21,8 +21,8 @@ const Service = () => {
                         <i className="fa-solid fa-truck-fast fa-lg"></i>
                     </div>
                     <div className='items-center justify-center'>
-                        <h1 className='font-semibold text-xl text-center'>FREE AND FAST DELIVERY</h1>
-                        <p className='text-sm text-center'>Free delivery for all orders over $140</p>
+                        <h1 className='font-semibold text-sm lg:text-xl text-center'>FREE AND FAST DELIVERY</h1>
+                        <p className='text-sm text-center hidden sm:block'>Free delivery for all orders over $140</p>
                     </div>
                 </div>
 
@@ -32,8 +32,8 @@ const Service = () => {
                         <i className="fa-solid fa-headset fa-xl"></i>
                     </div>
                     <div className='items-center justify-center'>
-                        <h1 className='font-semibold text-xl text-center'>24/7 CUSTOMER SERVICE</h1>
-                        <p className='text-sm text-center'>Friendly 24/7 customer support</p>
+                        <h1 className='font-semibold text-sm lg:text-xl text-center'>24/7 CUSTOMER SERVICE</h1>
+                        <p className='text-sm text-center hidden sm:block'>Friendly 24/7 customer support</p>
                     </div>
                 </div>
 
@@ -43,8 +43,8 @@ const Service = () => {
                         <i className="fa-solid fa-hand-holding-dollar fa-xl"></i>
                     </div>
                     <div className='items-center justify-center'>
-                        <h1 className='font-semibold text-xl text-center'>MONEY BACK GUARANTEE</h1>
-                        <p className='text-sm text-center'>We return money within 30 days</p>
+                        <h1 className='font-semibold text-sm lg:text-xl text-center'>MONEY BACK GUARANTEE</h1>
+                        <p className='text-sm text-center hidden sm:block'>We return money within 30 days</p>
                     </div>
                 </div>
             </div>

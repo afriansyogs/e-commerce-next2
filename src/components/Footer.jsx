@@ -25,7 +25,7 @@ const Footer = () => {
                         </li>
                     </ul>
                 </div>
-                <div className='w-[217px] ms-12'>
+                <div className='w-[217px] ms-5 lg:ms-12'>
                     <h3 className="text-xl font-medium mb-2">Support</h3>
                     <ul>
                         <li className='py-2'><p className="text-[16px]">SetiaBudi 115, Jakarta Selatan, DKI Jakarta, Indonesia.</p></li>
@@ -33,7 +33,7 @@ const Footer = () => {
                         <li className='py-2'><p className="text-[16px]">+62-812-456-3374</p></li>
                     </ul>
                 </div>
-                <div className='w-44 ms-16'>
+                <div className='w-44 ms-5 lg:ms-16'>
                     <h3 className="text-xl font-medium mb-2">Account</h3>
                     <ul>
                         <li className='py-2'><a href="#" className="text-[16px] hover:underline">My Account</a></li>
@@ -54,7 +54,7 @@ const Footer = () => {
                         <li className='py-2'><a href="#" className="text-[16px] hover:underline">Contact</a></li>
                     </ul>
                 </div>
-                <div className='pr-5'>
+                <div className='ms-5 lg:ms-0 pr-5'>
                     <h3 className="text-xl font-medium mb-2">Download App</h3>
                     <ul>
                         <li>
