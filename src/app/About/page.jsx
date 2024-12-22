@@ -9,13 +9,15 @@ import Founder from "@/components/Founder";
 export default function About() {
   return (
     <>
-      <Header />
-      <Navbar />
-      <AboutStory />
-      <CardStatistic />
-      <Founder />
-      <Service />
-      <Footer />
+      <div className="overflow-x-hidden">
+        <Header />
+        <Navbar />
+        <AboutStory />
+        <CardStatistic />
+        <Founder />
+        <Service />
+        <Footer />
+      </div>
     </>
   );
 }

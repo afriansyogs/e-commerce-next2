@@ -17,7 +17,7 @@ const ContactCompany = () => {
         <div className="h-auto my-5">
             <h1 className='mt-3 text-center text-4xl font-bold'>Contact</h1>
             <div className="w-[90%] mx-auto mt-10">
-                <div className="flex flex-wrap lg:gap-10 justify-center items-center" data-aos="zoom-in">
+                <div className="flex flex-wrap lg:gap-10 justify-center items-center gap-y-10 md:gap-y-0" data-aos="zoom-in">
                     {contactData.map((item) => (
                         <div key={item.id} className="w-64 h-40 border-2 border-black rounded-lg shadow-lg hover:shadow-xl transition-all duration-300 ease-in-out bg-white hover:bg-black hover:text-white hover:scale-105 active:scale-95">
                             <div className="flex flex-col items-center justify-center text-center">
