@@ -4,7 +4,7 @@ import { founderData } from '@/lib/data';
 
 const Founder = () => {
     return (
-        <div className="flex justify-center w-full gap-44 pt-28 pb-16">
+        <div className="grid gap-44 md:gap-8 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 justify-center pt-28 md:mt-36 pb-16 w-full">
             {founderData.map((item, index) => (
                 <div key={index} className="flex flex-col items-center" data-aos="fade-up" data-aos-duration="600">
                     <div className="relative w-72 h-56 rounded-t-full bg-red-500">
