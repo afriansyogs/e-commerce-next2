@@ -9,8 +9,8 @@ const FormSignUp = () => {
                 <Image src="/assets/img/Sunday.png" alt="Sunday" width={2907} height={2420} responsive="true"/>
             </div>
             <div className="w-full md:w-1/2 p-4">
-                <div className="w-[380px] mx-auto">
-                    <h1 className="text-5xl font-bold text-center text-black">Create Account</h1>
+                <div className="md:w-[380px] mx-auto">
+                    <h1 className="text-4xl md:text-5xl font-bold text-center text-black">Create Account</h1>
                     <form className='mt-10'>
                         <div className="mb-6">
                             <label className="block text-gray-700 text-sm font-bold mb-2" htmlFor="name">
