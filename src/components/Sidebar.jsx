@@ -1,4 +1,5 @@
 // src/components/Sidebar.jsx
+"use client";
 import React from 'react';
 import Link from 'next/link';
 import {sidebarCategory} from '@/lib/data'

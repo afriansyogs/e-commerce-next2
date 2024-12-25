@@ -1,3 +1,10 @@
+export const menuData = [
+    { menu: 'Home', url: '/' },
+    { menu: 'Contact', url: '/Contact' },
+    { menu: 'About', url: '/About' },
+    { menu: 'Sign Up', url: '/SignUp' },
+];
+
 export const sidebarCategory = [
     { category: "Woman's Fashion", url: '/womans-fashion' },
     { category: "Men's Fashion", url: '/mens-fashion' },

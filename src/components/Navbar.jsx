@@ -1,18 +1,15 @@
-// app/components/Navbar.jsx
 "use client";
 
 import React, { useState } from "react";
+import { usePathname } from "next/navigation"; 
 import Link from 'next/link';
-
-const menu = [
-    { menu: 'Home', url: '/' },
-    { menu: 'Contact', url: '/Contact' },
-    { menu: 'About', url: '/About' },
-    { menu: 'Sign Up', url: '/SignUp' },
-];
+import { menuData } from '@/lib/data';
 
 const Navbar = () => {
+    const pathname = usePathname(); // Mendapatkan pathname dari URL aktif
     const [open, setOpen] = useState(false);
+
+    const isActive = (url) => pathname === url; // Menentukan apakah URL aktif sesuai dengan link
 
     return (
         <div className="relative">
@@ -22,7 +19,7 @@ const Navbar = () => {
                 </div>
                 <div className="navbar-center hidden lg:flex me-12 justify-center">
                     <ul className="menu-horizontal px-1 flex items-end justify-center space-x-5">
-                        {menu.map((item, index) => (
+                        {menuData.map((item, index) => (
                             item.menu === 'Sign Up' ? (
                                 <li key={index} className="flex items-center">
                                     <a
@@ -35,9 +32,12 @@ const Navbar = () => {
                                     </a>
                                 </li>
                             ) : (
-                                <li key={index} className="flex items-center">
+                                <li key={index} className={`flex items-center ${isActive(item.url) ? "font-bold" : ""}`}>
                                     <Link href={item.url} passHref>
-                                        <span className="after:content-[''] after:block after:w-full after:h-[2px] after:bg-black after:mt-[4px] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition after:duration-200">
+                                        <span className={`relative after:content-[''] after:block after:w-full after:h-[2px] after:bg-black after:mt-[4px] 
+                                            ${isActive(item.url) ? "after:scale-x-100 after:origin-left after:transition after:duration-200" : "after:scale-x-0"} 
+                                            hover:after:scale-x-100 hover:after:origin-left hover:after:transition hover:after:duration-200`}
+                                        >
                                             {item.menu}
                                         </span>
                                     </Link>
@@ -84,7 +84,7 @@ const Navbar = () => {
             {open && (
                 <div className="absolute w-full bg-base-100 shadow-lg md:hidden z-50">
                     <ul className="px-1 py-3 space-y-3">
-                        {menu.map((item, index) => (
+                        {menuData.map((item, index) => (
                             item.menu === 'Sign Up' ? (
                                 <li key={index} className="flex items-center px-3">
                                     <a
@@ -97,9 +97,12 @@ const Navbar = () => {
                                     </a>
                                 </li>
                             ) : (
-                                <li key={index} className="flex items-center px-3">
+                                <li key={index} className={`flex items-center px-3 ${isActive(item.url) ? "font-bold" : ""}`}>
                                     <Link href={item.url} passHref>
-                                        <span className="after:content-[''] after:block after:w-full after:h-[2px] after:bg-black after:mt-[4px] after:scale-x-0 hover:after:scale-x-100 after:origin-left after:transition after:duration-200">
+                                        <span className={`relative after:content-[''] after:block after:w-full after:h-[2px] after:bg-black after:mt-[4px] 
+                                            ${isActive(item.url) ? "after:scale-x-100 after:origin-left after:transition after:duration-200" : "after:scale-x-0"} 
+                                            hover:after:scale-x-100 hover:after:origin-left hover:after:transition hover:after:duration-200`}
+                                        >
                                             {item.menu}
                                         </span>
                                     </Link>

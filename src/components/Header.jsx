@@ -2,11 +2,11 @@ import React from 'react';
 
 const Header = () => {
     return (
-        <header className="bg-black w-full h-[70px] lg:h-12">
+        <header className="bg-black w-full h-[65px] lg:h-12">
             <div className="flex justify-center items-center text-center pt-3">
-                <div className="text-md text-white font-light w-[90%] lg:w-auto">
+                <div className="text-sm md:text-md text-white font-light w-[90%] lg:w-auto">
                     Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%! 
-                    <span className="text-md text-white font-semibold ms-3">ShopNow</span>
+                    <span className="text-sm md:text-md text-white font-semibold ms-2">ShopNow</span>
                 </div>
                 {/* <div className="text-md text-white font-semibold ms-3">ShopNow</div> */}
             </div>
