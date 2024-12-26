@@ -6,10 +6,10 @@ import Link from 'next/link';
 import { menuData } from '@/lib/data';
 
 const Navbar = () => {
-    const pathname = usePathname(); // Mendapatkan pathname dari URL aktif
+    const pathname = usePathname();
     const [open, setOpen] = useState(false);
 
-    const isActive = (url) => pathname === url; // Menentukan apakah URL aktif sesuai dengan link
+    const isActive = (url) => pathname === url; 
 
     return (
         <div className="relative">
