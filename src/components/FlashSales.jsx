@@ -20,7 +20,7 @@ const FlashSales = () => {
     const filteredProductFlashSale = productData.filter(item => item.discount);
 
     return (
-        <div className="mt-14 ms-[10px] md:ms-[70px] w-[95%] md:w-[90%] border-b-2 border-base-300 pb-20">
+        <div className="mt-14 ms-[10px] md:ms-8 lg:ms-[70px] w-[95%] md:w-[91%] lg:w-[90%] border-b-2 border-base-300 pb-20">
             <Point text="Today&apos;s" />
             <div className="flex flex-wrap items-end gap-4 md:gap-8">
                 <div className="text-2xl md:text-4xl lg:text-[36px] font-bold">

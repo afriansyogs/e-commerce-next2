@@ -5,11 +5,11 @@ import Image from 'next/image';
 const FormSignUp = () => {
     return (
         <div className="flex flex-wrap w-full bg-white shadow-lg rounded-lg overflow-hidden">
-            <div className="w-full md:w-1/2 flex items-end justify-end">
+            <div className="w-full lg:w-1/2 flex items-end justify-end md:px-8 lg:px-0">
                 <Image src="/assets/img/Sunday.png" alt="Sunday" width={2907} height={2420} responsive="true"/>
             </div>
-            <div className="w-full md:w-1/2 p-4">
-                <div className="md:w-[380px] mx-auto">
+            <div className="w-full lg:w-1/2 p-4 md:px-8 lg:px-0">
+                <div className="lg:w-[380px] mx-auto">
                     <h1 className="text-4xl md:text-5xl font-bold text-center text-black">Create Account</h1>
                     <form className='mt-10'>
                         <div className="mb-6">

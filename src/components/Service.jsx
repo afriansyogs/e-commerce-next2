@@ -13,7 +13,7 @@ const Service = () => {
     }, []);
 
     return (
-        <div className="mb-28 md:mb-36 mt-12 md:mt-24 ms-[10px] md:ms-[70px] w-[95%] md:w-[90%]">
+        <div className="mb-28 md:mb-36 mt-12 lg:mt-24 ms-[10px] md:ms-8 lg:ms-[70px] w-[95%] md:w-[91%] lg:w-[90%]">
             <div className="flex flex-col md:flex-row md:gap-24 lg:gap-x-36 space-y-14 md:space-y-0 justify-center">
                 {/* Layanan Pengiriman */}
                 <div className="flex flex-col items-center" data-aos="zoom-out">

@@ -9,7 +9,7 @@ const Category = () => {
         .filter((subCategoryObj, index, self) => index === self.findIndex((t) => t.subCategory === subCategoryObj.subCategory));
 
     return (
-        <div className="mt-12 lg:mt-20 ms-[10px] md:ms-[70px] w-[95%] md:w-[90%] border-b-2 border-base-300 pb-20">
+        <div className="mt-12 lg:mt-20 ms-[10px] md:ms-8 lg:ms-[70px] w-[95%] md:w-[91%] lg:w-[90%] border-b-2 border-base-300 pb-20">
             <Point text="Categories" />
             <div className="mt-2 flex items-end">
                 <div className="text-2xl md:text-4xl lg:text-[36px] font-bold">Browse By Category</div>

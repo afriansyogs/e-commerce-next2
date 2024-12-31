@@ -14,7 +14,7 @@ const Sidebar = () => {
 
     return (
     <>
-        <div className="hidden sm:block h-97 md:w-60 lg:w-72 px-12 flex flex-col border-e-2 border-base-300">
+        <div className="hidden lg:block h-97 md:w-60 lg:w-72 px-12 flex flex-col border-e-2 border-base-300">
             <nav className="flex-1 p-2 pt-4">
                 <ul className="">
                     {sidebarCategory.map((item, index) => (
@@ -29,7 +29,7 @@ const Sidebar = () => {
         </div>
 
         {/* sidebar mobile  */}
-        <div className="relative h-auto md:hidden">
+        <div className="relative h-auto lg:hidden">
             {sideIsOpen && (
                 <div 
                 className="fixed inset-0 bg-black bg-opacity-30 backdrop-blur-sm z-20 lg:hidden"
@@ -42,7 +42,7 @@ const Sidebar = () => {
                 }`}
                 onClick={toggleSidebar}
             >
-                {!sideIsOpen && <span className="me-1">Category</span>}
+                {!sideIsOpen && <span className="me-1 md:ms-4">Category</span>}
                 {sideIsOpen ? (
                     <i className="fa-solid fa-angles-left"></i>
                 ) : (

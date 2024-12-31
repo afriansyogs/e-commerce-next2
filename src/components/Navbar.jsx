@@ -15,7 +15,7 @@ const Navbar = () => {
         <div className="relative">
             <div className="navbar bg-base-100 border-b-2 border-base-300">
                 <div className="navbar-start">
-                    <span className="ms-1 lg:mx-16 text-2xl font-bold">Exclusive</span>
+                    <span className="ms-1 md:ms-4 lg:mx-16 text-2xl font-bold">Exclusive</span>
                 </div>
                 <div className="navbar-center hidden lg:flex me-12 justify-center">
                     <ul className="menu-horizontal px-1 flex items-end justify-center space-x-5">
@@ -47,7 +47,7 @@ const Navbar = () => {
                     </ul>
                 </div>
                 <div className="navbar-end">
-                    <label className="hidden sm:flex input input-bordered flex items-center gap-2">
+                    <label className="hidden lg:flex input input-bordered items-center gap-2">
                         <input type="text" className="grow" placeholder="Search" />
                         <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -73,7 +73,7 @@ const Navbar = () => {
                             <i className="fa-solid fa-user"></i>
                         </Link>
                         <Link href=""
-                            className="btn btn-ghost text-gray-700 hover:text-gray-900 md:hidden"
+                            className="btn btn-ghost text-gray-700 hover:text-gray-900 lg:hidden md:me-4"
                             onClick={() => setOpen(!open)} >
                             {open ? <i className="fa-solid fa-xmark fa-lg"></i> : <i className="fa-solid fa-bars"></i>}
                         </Link>
@@ -82,7 +82,7 @@ const Navbar = () => {
             </div>
             {/* mobile menu  */}
             {open && (
-                <div className="absolute w-full bg-base-100 shadow-lg md:hidden z-50">
+                <div className="absolute w-full bg-base-100 shadow-lg lg:hidden z-50">
                     <ul className="px-1 py-3 space-y-3">
                         {menuData.map((item, index) => (
                             item.menu === 'Sign Up' ? (
