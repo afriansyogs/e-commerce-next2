@@ -16,12 +16,12 @@ const AboutStory = () => {
                     </p>
                 </div>
             </div>
-            <div className="w-full lg:w-1/2 flex items-center justify-center mt-6 lg:mt-0 px-6 lg:px-0">
-                <div className="relative w-full max-w-[852px] h-auto">
+            <div className="w-full lg:w-1/2 flex items-center lg:items-start justify-center mt-14 lg:mt-24 px-6 lg:px-0">
+                <div className="relative w-full max-w-[350px] md:max-w-[420px] lg:max-w-[500px] h-auto">
                     <Image 
-                        src="/assets/img/aboutImg.png" 
+                        src="/assets/img/e-commerce-illustration.png" 
                         alt="About Us" 
-                        width={852} 
+                        width={350} 
                         height={392} 
                         className="w-full h-auto"
                     />
