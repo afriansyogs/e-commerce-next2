@@ -2,7 +2,7 @@ import React from 'react';
 import { fieldStatistic } from '@/lib/data';
 const CardStatistic = () => {
     return (
-        <div className="flex flex-wrap mt-24 md:mt-20 gap-y-8 gap-x-8 md:gap-x-24 justify-center mb-16 px-4 lg:px-0" data-aos="zoom-in" data-aos-duration="500">
+        <div className="flex flex-wrap mt-24 md:mt-20 lg:mt-4 gap-y-8 gap-x-8 md:gap-x-24 justify-center mb-16 px-4 lg:px-0" data-aos="zoom-in" data-aos-duration="500">
             {fieldStatistic.map((items, index) => (
                 <div 
                     key={index} 
