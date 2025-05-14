@@ -105,7 +105,7 @@ const BestProduct = () => {
                             <div className="text-xs sm:text-sm font-medium">Seconds</div>
                         </div>
                     </div>
-                    <button className="hidden lg:hidden bg-green-500 w-[180px] sm:w-[200px] h-12 sm:h-14 mt-8 sm:mt-10 rounded-sm border-[3px] border-green-500 active:scale-110 transition duration-200 text-white text-sm sm:text-base font-medium text-center hover:text-green-400 hover:bg-white hover:border-green-500">
+                    <button className="hidden lg:block bg-green-500 w-[180px] sm:w-[200px] h-12 sm:h-14 mt-8 sm:mt-10 rounded-sm border-[3px] border-green-500 active:scale-110 transition duration-200 text-white text-sm sm:text-base font-medium text-center hover:text-green-400 hover:bg-white hover:border-green-500">
                         Buy Now!
                     </button>
                 </div>
